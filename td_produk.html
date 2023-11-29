@@ -265,7 +265,7 @@
                           <div class="card-body p-0">
                               <div class="p-5">
                                   <div class="text-center">
-                                      <h1 class="h4 text-gray-900 mb-4">Tambah Data</h1>
+                                      <h1 class="h4 text-gray-900 mb-4">Tambah Data Produk</h1>
                                   </div>
                                   <form class="user">
                                     <div class="form-group row">
@@ -283,13 +283,13 @@
                                     <div class="form-group row">
                                       <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Deskripsi Produk</label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword1" placeholder="Masukkan Deskripsi Produk">
+                                        <input type="text" class="form-control form-control-user" id="exampleInputPassword1" placeholder="Masukkan Deskripsi Produk">
                                       </div>
                                     </div>
                                     <div class="form-group row">
                                       <label for="exampleInputPassword2" class="col-sm-2 col-form-label">Stok Tersedia</label>
                                       <div class="col-sm-10">
-                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword2" placeholder="Masukkan Stok Tersedia">
+                                        <input type="text" class="form-control form-control-user" id="exampleInputPassword2" placeholder="Masukkan Stok Tersedia">
                                       </div>
                                     </div>
                                     <div class="form-group row">
@@ -297,11 +297,33 @@
                                       <div class="col-sm-10">
                                         <input class="input-xxlarge" type="file" name="foto_barang" accept="image/png, image/jpeg" onchange="loadFile(event)" required="">
                                         <img id="foto_barang" height="95px" width="95px">
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-6 offset-sm-3">
-                                      <a href="blank.html" class="btn btn-primary btn-user btn-block">Tambahkan</a>
-                                    </div>
+                                        <td>
+                                          <button class="col-sm-6 offset-sm-3 btn btn-primary" type="button" data-toggle="modal" data-target="#konfirmasiModal">
+                                            Tambahkan
+                                          </button>
+                                        </td>
+                                        
+                                        <div class="modal fade" id="konfirmasiModal" tabindex="-1" role="dialog" aria-labelledby="konfirmasiModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="konfirmasiModalLabel">Konfirmasi Penambahan Data</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                Apakah Anda yakin ingin menambahkan data ini?
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                                <button type="button" class="btn btn-primary" id="tambahkanBtn3">Ya, Tambahkan</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                          </div>
+                                        </div>
                                   </form>
                                   
                               </div>
@@ -320,6 +342,6 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
   </body>
 </html>

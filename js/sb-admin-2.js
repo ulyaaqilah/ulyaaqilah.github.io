@@ -56,10 +56,344 @@
 })(jQuery); // End of use strict
 
 
-function confirmDelete() {
-  if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
-    alert("Data telah dihapus."); 
-  } else {
 
-  }
+
+
+// Function to show the modal
+function showModal() {
+  $('#konfirmasiModal').modal('show');
 }
+
+//PELANGGAN
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_pelanggan.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+// GALLERYFOTO
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn1').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_galleryfoto.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+  // GALLERYVIDIO
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn2').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_galleryvidio.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+ // PRODUK
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn3').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_produk.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+   // TESTIMONI
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn4').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_testimoni.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+// OMSET
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn5').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_omset.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+   // STAFF
+// Function to handle the "Ya, Tambahkan" button click
+$('#tambahkanBtn6').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_staff.html?message=Data+berhasil+ditambahkan!';
+});
+
+
+  // Function to get URL parameters
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Check if there's a message in the URL
+  var message = getParameterByName('message');
+  if (message) {
+    $('#successAlert').text(message).show();
+    // Set timeout untuk menyembunyikan alert setelah 10 detik
+    setTimeout(function() {
+      $('#successAlert').fadeOut('slow');
+    }, 3000); 
+  }
+
+  //DELETE STAFF
+  $(document).ready(function() {
+    $('#deleteButton').on('click', function(e) {
+        e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+        
+        // Lakukan aksi penghapusan data di sini
+        // ...
+
+        // Tutup modal setelah penghapusan selesai
+        $('#confirmDeleteModal').modal('hide');
+
+        // Setelah modal tertutup, tampilkan alertH selama 10 detik
+        $('.alertH').fadeIn().delay(3000).fadeOut('slow'); // Munculkan alert selama 10 detik
+    });
+});
+
+  //DELETE PELANGGAN
+  $(document).ready(function() {
+    $('#deleteButton').on('click', function(e) {
+        e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+        
+        // Lakukan aksi penghapusan data di sini
+        // ...
+
+        // Tutup modal setelah penghapusan selesai
+        $('#confirmDeleteModal1').modal('hide');
+
+        // Setelah modal tertutup, tampilkan alertH selama 10 detik
+        $('.alertH').fadeIn().delay(3000).fadeOut(); // Munculkan alert selama 10 detik
+    });
+});
+
+  //DELETE PRODUK
+  $(document).ready(function() {
+    $('#deleteButton').on('click', function(e) {
+        e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+        
+        // Lakukan aksi penghapusan data di sini
+        // ...
+
+        // Tutup modal setelah penghapusan selesai
+        $('#confirmDeleteModal3').modal('hide');
+
+        // Setelah modal tertutup, tampilkan alertH selama 10 detik
+        $('.alertH').fadeIn().delay(3000).fadeOut(); // Munculkan alert selama 10 detik
+    });
+});
+
+//DELETE TESTIMONI
+$(document).ready(function() {
+  $('#deleteButton').on('click', function(e) {
+      e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+      
+      // Lakukan aksi penghapusan data di sini
+      // ...
+
+      // Tutup modal setelah penghapusan selesai
+      $('#confirmDeleteModal4').modal('hide');
+
+      // Setelah modal tertutup, tampilkan alertH selama 10 detik
+      $('.alertH').fadeIn().delay(3000).fadeOut(); // Munculkan alert selama 10 detik
+  });
+});
+
+//DELETE GALLERYY FOTO
+$(document).ready(function() {
+  $('#deleteButton').on('click', function(e) {
+      e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+      
+      // Lakukan aksi penghapusan data di sini
+      // ...
+
+      // Tutup modal setelah penghapusan selesai
+      $('#confirmDeleteModal5').modal('hide');
+
+      // Setelah modal tertutup, tampilkan alertH selama 10 detik
+      $('.alertH').fadeIn().delay(3000).fadeOut(); // Munculkan alert selama 10 detik
+  });
+});
+
+//DELETE GALLERY VIDIO
+$(document).ready(function() {
+  $('#deleteButton').on('click', function(e) {
+      e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+      
+      // Lakukan aksi penghapusan data di sini
+      // ...
+
+      // Tutup modal setelah penghapusan selesai
+      $('#confirmDeleteModal6').modal('hide');
+
+      // Setelah modal tertutup, tampilkan alertH selama 10 detik
+      $('.alertH').fadeIn().delay(3000).fadeOut(); // Munculkan alert selama 10 detik
+  });
+});
+
+//DELETE OMSET
+$(document).ready(function() {
+  $('#deleteButton').on('click', function(e) {
+      e.preventDefault(); // Untuk menghentikan aksi default dari tombol delete
+      
+      // Lakukan aksi penghapusan data di sini
+      // ...
+
+      // Tutup modal setelah penghapusan selesai
+      $('#confirmDeleteModal7').modal('hide');
+
+      // Setelah modal tertutup, tampilkan alertH selama 10 detik
+      $('.alertH').fadeIn().delay(3000).fadeOut(); // Munculkan alert selama 10 detik
+  });
+});
+
+
+//EDIT STAFF
+
+  $(document).ready(function() {
+    $('#tambahkanBtnE1').on('click', function() {
+      // Redirect ke halaman m_staff
+      window.location.href = 'm_staff.html';
+
+      // Periksa jika sudah berada di halaman m_staff
+      if (window.location.pathname.includes('m_staff')) {
+        // Tampilkan peringatan
+        $('.alert').removeClass('d-none'); // Hapus kelas 'd-none' untuk menampilkan peringatan
+      }
+    });
+  });
+
+
+

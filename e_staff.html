@@ -259,62 +259,82 @@
                   <!-- End of Topbar -->
 
 
-                <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                      <div class="card o-hidden border-0 shadow-lg my-5">
-                          <div class="card-body p-0">
-                              <div class="p-5">
-                                  <div class="text-center">
-                                      <h1 class="h4 text-gray-900 mb-4">Edit Data Staff</h1>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="card o-hidden border-0 shadow-lg my-5">
+                            <div class="card-body p-0">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Edit Data Staff</h1>
+                                    </div>
+                                    <form class="user">
+                                      <div class="form-group row">
+                                        <label for="exampleName" class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-10">
+                                          <input type="text" class="form-control form-control-user" id="exampleName" placeholder=" Name">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label for="inputGroupSelect01" class="col-sm-2 col-form-label">Pilih Level</label>
+                                        <div class="col-sm-10">
+                                          <select class="form-control form-control-user" id="inputGroupSelect01">
+                                              <option selected>Pilih Level </option>
+                                              <option value="1">Pegawai</option>
+                                              <option value="2">Admin/option>
+                                              
+                                            </select>
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label for="exampleEmail" class="col-sm-2 col-form-label">Email</label>
+                                          <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-user" id="exampleEmail" placeholder=" Email">
+                                          </div>
+                                        </div>
+                                      <div class="form-group row">
+                                        <label for="exampleInputPassword" class="col-sm-2 col-form-label">Password</label>
+                                        <div class="col-sm-10">
+                                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder=" Password">
+                                        </div>
+                                      </div>
+                                      <td>
+                                        <button class="col-sm-6 offset-sm-3 btn btn-primary" type="button" data-toggle="modal" data-target="#Modaledit">
+                                          Edit
+                                        </button>
+                                      </td>
+
+                                      <div class="modal fade" id="Modaledit" tabindex="-1" role="dialog" aria-labelledby="konfirmasiModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="konfirmasiModalLabel">Konfirmasi Pengeditan Data</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Apakah Anda yakin ingin mengedit data ini?
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                              <button type="button" class="btn btn-primary" id="tambahkanBtnE1">Ya, Edit</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                        </div>
+                                      </div>
+                                    </form>
+  
+                                    
+                                    
                                   </div>
-                                  <form class="user">
-                                    <div class="form-group row">
-                                      <label for="exampleName" class="col-sm-2 col-form-label">Name</label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control form-control-user" id="exampleName" placeholder="Name">
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label for="exampleEmail" class="col-sm-2 col-form-label">Email</label>
-                                      <div class="col-sm-10">
-                                        <input type="email" class="form-control form-control-user" id="exampleEmail" placeholder="Email">
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label for="inputGroupSelect01" class="col-sm-2 col-form-label">Pilih Menu</label>
-                                      <div class="col-sm-10">
-                                        <select class="form-control form-control-user" id="inputGroupSelect01">
-                                            <option selected>Pilih Menu </option>
-                                            <option value="1">Sotang Original</option>
-                                            <option value="2">Sotang Mozarella</option>
-                                            <option value="3">Sotang Jumbo</option>
-                                            <option value="4">Sotang Full Jumbo</option>
-                                            <option value="5">Sotang Full Mozarella</option>
-                                            <option value="6">Corndog Mozarella</option>
-                                            <option value="7">Corndog SOSIS</option>
-                                            <option value="8">Corndog SOSIS Jumbo</option>
-                                            <option value="9">Choco Mozarella</option>
-                                            <option value="10">Kentang Goreng</option>
-                                          </select>
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label for="exampleInputPassword" class="col-sm-2 col-form-label">Password</label>
-                                      <div class="col-sm-10">
-                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password">
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-6 offset-sm-3">
-                                      <a href="blank.html" class="btn btn-primary btn-user btn-block">Edit</a>
-                                    </div>
-                                  </form>
-                                  
-                                  
                               </div>
                           </div>
                       </div>
                   </div>
-              </div>
+                  
+        </div>
               
     </div>
 
