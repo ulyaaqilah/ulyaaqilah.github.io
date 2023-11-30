@@ -381,19 +381,43 @@ $(document).ready(function() {
 
 
 //EDIT STAFF
+$('#tombolEdit').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_staff.html?message=Data+berhasil+diedit!';
+});
 
-  $(document).ready(function() {
-    $('#tambahkanBtnE1').on('click', function() {
-      // Redirect ke halaman m_staff
-      window.location.href = 'm_staff.html';
+//EDIT PELANGGAN
+$('#tombolEdit1').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_pelanggan.html?message=Data+berhasil+diedit!';
+});
 
-      // Periksa jika sudah berada di halaman m_staff
-      if (window.location.pathname.includes('m_staff')) {
-        // Tampilkan peringatan
-        $('.alert').removeClass('d-none'); // Hapus kelas 'd-none' untuk menampilkan peringatan
-      }
-    });
-  });
+//EDIT PRODUK
+$('#tombolEdit2').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_produk.html?message=Data+berhasil+diedit!';
+});
 
+//EDIT TESTIMONI
+$('#tombolEdit3').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_testimoni.html?message=Data+berhasil+diedit!';
+});
 
+//EDIT GALLERY FOTO
+$('#tombolEdit4').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_galleryfoto.html?message=Data+berhasil+diedit!';
+});
 
+//EDIT GALLERY VIDIO
+$('#tombolEdit5').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_galleryvidio.html?message=Data+berhasil+diedit!';
+});
+
+//EDIT OMSET
+$('#tombolEdit6').on('click', function() {
+  // Redirect to m_menejemen.html with a success message in the URL
+  window.location.href = 'm_omset.html?message=Data+berhasil+diedit!';
+});
